@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="js/form.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i></a>
+      <!-- <i><img src="368477533_688520779987220_6990215871891072670_n.jpg" class="logo" alt=""></i> -->
+  
+      <div id="menu-btn" class="fas fa-bars"></div>
+  
+      <nav class="navbar">
+          <ul>
+              <li><a href="home.html">home</a></li>
+              <li><a href="application.html">Apply Exam</a></li>
+              <li><a href="login.html">Check results</a></li>
+              <li><a href="#">Exam Dates</a>
+                  
+                  <ul>
+                      <li><a href="course-1.html">Professional Courses</a></li>
+                      <li><a href="course-2.html">Diploma and Language Courses</a></li>
+                      <li><a href="course-3.html">Computer Courses</a></li>
+                      <li><a href="course-4.html">international school</a></li>
+                  </ul>
+              </li>
+              
+              <li><a href="contact.html">contact</a></li>
+          </ul>
+      </nav>
+  
+  </header>
+  
+   <!-- <form action = "php/welcome.php" method="post"> -->
+
+
+    <img src="logo-main.png" alt="Description of the image" width="500" height="100">
+    <form action="https://www.jmc.lk/ict-computing/" method="" class="form">
+      <h1 class="text-center">EXAMINATION APPLICATION FORM</h1>
+      <h3>( PLEASE USE BLOCK CAPITALS )</h3>
+      <!-- Progress bar -->
+      
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="IDs"
+        ></div>
+        <div class="progress-step" data-title= "Personal Details"></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="Submition"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="username"><h2>Ref.No</h2></label>
+          <input type="text" name="username" id="username" required />
+        </div>
+
+        <div class="input-group">
+          <label for="position"><h2>Course Code</h2></label>
+          <input type="text" name="position" id="position" required />
+        </div>
+
+       <div class="input-group">
+            <label for="position"><h2>Registration Date</h2></label>
+            <input type="date" name="position" id="position" required />
+        </div>
+
+
+        <!-- Exam Dates -->
+
+
+
+        <div class="input-group"> 
+          <label for="exam-date"><h2>Examination Date</h2></label>
+          <select name="exam-date" id="exam-date" required>
+        <option value="2023-11-01">November 1, 2023</option>
+        <option value="2023-11-15">November 15, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+        <option value="2023-12-01">December 1, 2023</option>
+
+        <!-- Add more date options as needed -->
+
+    </select>
+      </div>
+
+
+        <!-- Branches -->
+
+      <div class="input-group">
+        <label for="position"><h2>Branch</h2><h3>[ Select your Branch ]</h3></label>
+        <select name="position" id="position" required>
+          <option value="volvo">Colombo</option>
+
+            <option value="volvo">Colombo</option>
+            <option value="saab">Havelock Town Branch</option>
+            <option value="fiat">Kiribathgoda</option>
+            <option value="audi">Gampaha</option>
+            <option value="audi">Negombo</option>
+            <option value="audi">Rathnapura</option>
+            <option value="audi">Maharagama</option>
+            <option value="audi">Kaduwela</option>
+            <option value="audi">Dematagoda</option>
+            <option value="audi">Angoda</option>
+            <option value="audi">Bandarawela</option>
+            <option value="audi">Kaluthara</option>
+            <option value="audi">Kegalle</option>
+            <option value="audi">Polonnaruwa</option>
+            <option value="audi">Kurunegala</option>
+            <option value="audi">Peradeniya</option>
+            <option value="audi">Ampitiya</option>
+            <option value="audi">Nittambuwa</option>
+            <option value="audi">Gampola</option>
+            <option value="audi">Kotmale</option>
+          <!-- ... (other options) ... -->
+        </select>
+         </div>
+
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+
+        
+
+
+
+      
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone"><h2> Full Name [ * The certificate will be issued as per full name ]</h2></label>
+          <input type="text" name="phone" id="phone" required />
+        </div>
+
+
+        <div class="input-group">
+          <label for="title"><h2>Title</h2></label>
+          
+          <select name="title" id="title" required>
+            <option value="Rev">Rev</option>
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+            <option value="Mrs">Mrs</option>
+          </select>
+        </div>
+
+
+        
+        <div class="input-group">
+          <label for="fullname"><h2>Name With Initials</h2></label>
+          <input type="text" name="text" id="text" required />
+        </div>
+
+        
+
+        <div class="input-group">
+            <label for="email"><h2>NIC No</h2> </label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="input-group">
+            <label for="dob"><h2>Date of Birth</h2> </label>
+            <input type="date" name="dob" id="dob" required/>
+          </div>
+          <!-- Inside the second form step -->
+          <!-- Inside the "Personal Details" form step -->
+
+
+<div class="input-group">
+    <label for="gender"><h2>Gender</h2></label>
+    <div class="radio-group">
+      <input type="radio" name="gender" id="male" value="Male"required />
+      <label for="male"><h3>Male</label></h3></label>
+  
+      <input type="radio" name="gender" id="female" value="Female"required />
+      <label for="female"><h3>Female</h3></label>
+  
+      <input type="radio" name="gender" id="other" value="Other"required />
+      <label for="other"><h3>Other</h3></label>
+    </div>
+  </div>
+
+  
+  <div class="input-group">
+    <label for="civil-status"><h2>Civil Status</h2></label>
+    <div class="radio-group">
+      <input type="radio" name="civil-status" id="single" value="Single"required />
+      <label for="single"><h3>Single</h3></label>
+  
+      <input type="radio" name="civil-status" id="married" value="Married"required />
+      <label for="married"><h3>Married</h3></label>
+  
+    </div>
+  </div>
+
+
+
+  <div class="input-groups">
+    <h2>* Below 16 years students upload Birth Certificate and others upload NIC </br></h2>
+    <label for="fullname"></label><br><h2>[ Font - Side ] </h2></label>
+    <!-- <label for="photo">Upload Photo</label> -->
+    <input type="file" name="photos" id="photos" accept="image/*" required/>
+    <!-- <span class="file-names">No file chosen</span> -->
+  </div>
+  <!-- <img id="uploaded-photos" src="" alt="Uploaded Photos" width="100" height="100"> -->
+  
+  <div class="input-groupss">
+    <label for="fullname"><h2> [ Rear - Side ]</h2></label>
+    <!-- <label for="photo">Upload Photo</label> -->
+    <input type="file" name="photoss" id="photoss" accept="image/*" required/>
+    <!-- <span class="file-names">No file chosen</span> -->
+  </div>
+  <!-- <img id="uploaded-photos" src="" alt="Uploaded Photos" width="100" height="100"> -->
+  
+
+ 
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+            <label for="fullname"><h2>Correspondence Address (Mailing)</h2></label>
+            <input type="text" name="text" id="text" required/>
+          </div>
+
+          <div class="input-group">
+            <label for="address2"><h2>Address line 2</h2></label>
+            <input type="text" name="address2" id="address2" />
+          </div>
+          
+          <div class="input-group">
+            <label for="address2"><h2>Address line 3</h2></label>
+            <input type="text" name="address2" id="address2" />
+          </div>
+          
+
+        <div class="input-group">
+          <label for="ID"><h2>Tele.Mobile</h2></label>
+          <input type="number" name="ID" id="ID" required />
+        </div>
+        <div class="input-group">
+            <label for="ID"><h2>Tele.Residence</h2></label>
+            <input type="number" name="ID" id="ID" required/>
+          </div>
+          <div class="input-group">
+            <label for="ID"><h2>Tele.Whatsapp Number</label>
+            <input type="number" name="ID" id="ID" required/>
+          </div>
+          <div class="input-group">
+            <label for="email"><h2>Email Address</h2></label>
+            <input type="email" name="text" id="text" required/>
+          </div>
+          
+
+          <!-- Add this <img> element to display the uploaded photo -->
+<div class="input-group">
+  <label for="fullname"><h2>Upload your Photo</h2></label>
+  <label for="photo">Upload Photo</label>
+  <input type="file" name="photo" id="photo" accept="image/*" required />
+  <h3>*Photograph Must be passports size</h3>
+  <h3>*For KIDS Courses - School Uniform</h3>
+  <h3>*For All other courses - The blouse or shirt buttons should close until the neck</h3>
+  <h3>*Women - Any colour blouse with collar and coat</h3>
+  <h3>*Men - Any colour shirt with tie and coat</h3>
+  <span class="file-name">No file chosen</span>
+</div>
+<img id="uploaded-photo" src="" alt="Uploaded Photo" width="100" height="100">
+
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <!-- <label for="Name of the course"><h2>Name of the course</h2></label> -->
+          <!-- <input type="text" name="noc" id="noc" /> -->
+        </div>
+
+        <div class="input-group">
+          <label for="noc"><h2>Name of the course</h2></label>
+          <select name="noc" id="noc">
+            <option value="Course 1">Institute of Charted Accountant Of SriLanka</option>
+            <option value="Course 2">Association of Accounting Technicians of Sri Lanka</option>
+            <option value="Course 3">Certified Management Accountants of Sri Lanka </option>
+            <option value="Course 3">Institute of  Bankers of sriLanka</option>
+            <option value="Course 3">Government Examinations</option>
+            <option value="Course 3">Executive Dip. in Human Resource Management</option>
+            <option value="Course 3">Executive Dip. in Marketing & Business Management</option>
+            <option value="Course 3">Dip. in Per School Teaching</option>
+            <option value="Course 3">Dip. E-Media</option>
+            <option value="Course 3">Kids Media Course</option>
+            <option value="Course 3">3inOne Diploma in English</option>
+            <option value="Course 3">Dip. in Computerized Accounting</option>
+            <option value="Course 3">Dip. in Network Technology</option>
+            <option value="Course 3">Dip. in Information & Communication Technology</option>
+            <option value="Course 3">Certificate in Microsoft Office</option>
+            <option value="Course 3">Certificate in Graphic Designing</option>
+            <option value="Course 3">Certificate in Business Applications</option>
+            <option value="Course 3">Certificate in Web Design & Development </option>
+            <option value="Course 3">Certificate in Network Technology</option>
+            <option value="Course 3">Certificate in Red Hat Linux Net Admin</option>
+            <option value="Course 3">Certificate in Advanced Excel</option>
+            <option value="Course 3">Certificate in Software Development</option>
+            <option value="Course 3">Certificate in Audio Video Production</option>
+            <option value="Course 3">Certificate in Hardware Technology</option>
+            <option value="Course 3">Certificate in Internet & Email Technology</option>
+            <option value="Course 3">JMC Kids computing</option>
+            <option value="Course 3">Subject Certificate in Accpac for windows  </option>
+            <option value="Course 3">Subject Certificate in M.Y.O.B</option>
+            <option value="Course 3">Subject certificate in QuickBook</option>
+            <option value="Course 3">Subject certificate in Sage Line 50</option>
+            <option value="Course 3">Subject certificate in Peachtree</option>
+            <option value="Course 3">Subject certificate in Tally</option>
+            <option value="Course 3">Subject certificate MS Windows 7</option>
+            <option value="Course 3">Subject certificate MS Excel 2013</option>
+            <option value="Course 3">Subject certificate in MS Word 2013</option>
+            <option value="Course 3">Subject certificate in MS Power Point</option>
+            <option value="Course 3">Subject certificate in MS Access</option>
+            <option value="Course 3">Subject certificate in CoreDraw</option>
+            <option value="Course 3">Subject certificate in Adobe FreeHand</option>
+            <option value="Course 3">Subject certificate in Adobe P photoshop</option>
+            <option value="Course 3">Subject certificate in Adobe illustrator</option>
+            <option value="Course 3">Subject certificate in Adobe in design</option>
+            <option value="Course 3">Subject certificate in HTML & DHTML</option>
+            <option value="Course 3">Subject certificate in Adobe Dreamweaver</option>
+            <option value="Course 3">Subject certificate in JavaScript</option>
+            <option value="Course 3">Subject certificate in Cascading Style sheet</option>
+            <option value="Course 3">Subject certificate in Java Programming</option>
+            <option value="Course 3">Subject certificate in PHP</option>
+            <option value="Course 3">Subject certificate in SQL</option>
+            <option value="Course 3">Subject certificate in ASP.NET</option>
+            <option value="Course 3">Subject certificate in Adobe Premiere Pro</option>
+            <option value="Course 3">Subject certificate in Autodesk Maya 3D Animation</option>
+            <option value="Course 3">Subject certificate in Swish max4 Animation</option>
+            <option value="Course 3">Subject certificate in Adobe Flash CS6 </option>
+            <option value="Course 3">Subject certificate in Linux administration</option>
+            <option value="Course 3">Subject certificate in After Effects</option>
+            <option value="Course 3">Subject certificate in Cristal Report</option>
+            <option value="Course 3">Subject certificate in Internet & e-mail</option>
+            <option value="Course 3">Subject certificate in c#.Net</option>
+            <option value="Course 3">Subject certificate in Microsoft project</option>
+            <option value="Course 3">International School</option>
+            <option value="Course 3">Montessori</option>
+            <option value="Course 3">Grades 1 to 5</option>
+            <option value="Course 3">Grade 6 to 11</option>
+            
+
+            
+
+
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        
+
+    
+        <div class="group">
+            <label for="appearing"><h2>Is it the first time appearing in the exam ?</h2></label>
+            <div class="radio-group">
+              <input type="radio" name="first-time" id="yes" value="Yes" />
+              <label for="yes">Yes</label>
+          
+              <input type="radio" name="first-time" id="no" value="No" />
+              <label for="no">NO</label>
+          
+            </div>
+
+            <div class="formstep">
+                <div class="input-group">
+                  <label for="Name of the course"><h2>If No,What are the subjects you are repeating ?</h2></label>
+                  <input type="text" name="c" id="c" />
+
+                  <div class="input-group">
+                    <label for="dob"><h2>Date of Today</h2> </label>
+                    <input type="date" name="dot" id="dot" />
+                  </div>
+
+                </div><p> <h3>I hereby certify that the above particulars are true and correct.</h3> </p><br>
+
+        
+        
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
